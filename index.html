@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limit Input Fields </title>
+    <!-- link for favicon  -->
+    <link rel="shortcut icon" href="./favicon.png" type="image/x-icon">
+    <!-- link for stylesheet  -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form action="#">
+            <input  type="text" placeholder="Username" maxlength="25" required>
+            <i class="icon">@</i>
+            <span class="counter" >25</span>
+        </form>
+    </div>
+    <script>
+        const input = document.querySelector("form input");
+        counter = document.querySelector("form span.counter");
+        charLength = input.getAttribute("maxlength");
+        input.onkeyup = ()=>{
+        counter.innerHTML= charLength-input.value.length;
+        }
+    </script>
+</body>
+</html>

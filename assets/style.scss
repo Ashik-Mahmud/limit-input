@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(22, 185, 172);
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    .wrapper{
+        form{
+            width: 450px;
+            background-color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 1rem;
+            position: relative;
+            i.icon{
+                font-size: 1rem;
+                font-family: Arial, Helvetica, sans-serif;
+                color: rgb(190, 190, 190);
+                font-weight: bold;
+                align-self: center;
+                display: block;
+                position: absolute;
+                left: 28px;
+                user-select: none;
+                transition: 0.5s;
+            }
+               ::placeholder {
+                   color: rgb(190, 190, 190);
+               }
+
+               span.counter {
+                   align-self: center;
+                   display: block;
+                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                   font-size: 1.2rem;
+                   position: absolute;
+                   right: 30px;
+                   color: rgb(190, 190, 190);
+                   border-left: 1px solid;
+                   padding-left: 0.5rem;
+                   transition: 0.5s;
+                   cursor: pointer;
+                   user-select: none;
+               }
+              input{
+                width: 100%;
+                padding: .8rem 2rem;
+                outline: none;
+                border: 2px solid #eee;
+                font-size: 1rem;
+                border-radius: 3px;
+                transition: all 0.5s;
+                color: rgb(22, 185, 172);
+                &:focus,
+                &:valid{
+                    border: 2px solid rgb(22, 185, 172);
+                }
+                &:valid ~  .counter{
+                    color: rgb(22, 185, 172);
+                }
+                &:valid ~ i.icon {
+                    color: rgb(22, 185, 172);
+                }
+            }
+         
+        }
+    }
+}
