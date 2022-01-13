@@ -1,3 +1,6 @@
+// import 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// overall css 
 body{
     background-color: rgb(22, 185, 172);
     margin: 0px;
@@ -7,6 +10,8 @@ body{
     align-items: center;
     height: 100vh;
     position: relative;
+    font-family: 'Poppins',
+    sans-serif;
     .wrapper{
         form{
             width: 450px;
@@ -15,6 +20,8 @@ body{
             justify-content: space-between;
             padding: 1rem 1rem;
             position: relative;
+            font-family: 'Poppins',
+            sans-serif;
             i.icon{
                 font-size: 1rem;
                 font-family: Arial, Helvetica, sans-serif;
@@ -34,7 +41,6 @@ body{
                span.counter {
                    align-self: center;
                    display: block;
-                   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
                    font-size: 1.2rem;
                    position: absolute;
                    right: 30px;
@@ -44,6 +50,7 @@ body{
                    transition: 0.5s;
                    cursor: pointer;
                    user-select: none;
+              
                }
               input{
                 width: 100%;
@@ -54,6 +61,8 @@ body{
                 border-radius: 3px;
                 transition: all 0.5s;
                 color: rgb(22, 185, 172);
+                font-family: 'Poppins',
+                sans-serif;
                 &:focus,
                 &:valid{
                     border: 2px solid rgb(22, 185, 172);

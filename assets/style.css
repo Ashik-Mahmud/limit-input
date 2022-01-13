@@ -6,13 +6,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   position: relative;
+  font-family: 'Poppins',
+    sans-serif;
 }
 
 body .wrapper form {
@@ -22,27 +24,28 @@ body .wrapper form {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 1rem 1rem;
   position: relative;
 }
 
 body .wrapper form i.icon {
   font-size: 1rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Poppins',
+    sans-serif;
   color: #bebebe;
   font-weight: bold;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   display: block;
   position: absolute;
   left: 28px;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -65,10 +68,11 @@ body .wrapper form ::placeholder {
 
 body .wrapper form span.counter {
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
   display: block;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Poppins',
+    sans-serif;
   font-size: 1.2rem;
   position: absolute;
   right: 30px;
@@ -79,9 +83,9 @@ body .wrapper form span.counter {
   transition: 0.5s;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body .wrapper form input {
@@ -94,17 +98,21 @@ body .wrapper form input {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   color: #16b9ac;
+  font-family: 'Poppins',
+    sans-serif;
 }
 
-body .wrapper form input:focus, body .wrapper form input:valid {
+body .wrapper form input:focus,
+body .wrapper form input:valid {
   border: 2px solid #16b9ac;
 }
 
-body .wrapper form input:valid ~ .counter {
+body .wrapper form input:valid~.counter {
   color: #16b9ac;
 }
 
-body .wrapper form input:valid ~ i.icon {
+body .wrapper form input:valid~i.icon {
   color: #16b9ac;
 }
+
 /*# sourceMappingURL=style.css.map */
